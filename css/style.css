@@ -1,0 +1,22 @@
+.block{
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+   /* top: 50%;
+   transform: translateY(-50%); */
+   width: 200px;
+   background-color: blue;
+   padding: 20px;
+   border-radius: 5px;
+}
+
+
+.button a{
+    text-decoration: none;
+    color: black;
+ 
+    border-radius: 5px;
+    text-decoration: none;
+    outline: none;
+}
+

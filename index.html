@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript">
+        function hideComment(){
+            $("#comments").slideUp(1000, function () {
+                $("#hide").hide();
+                $("#show").show();
+
+            });
+        }
+
+
+        function showComment(){
+            $("#comments").slideDown(1000, function () {
+                $("#hide").show();
+                $("#show").hide();
+
+            });
+        }
+
+
+        $(document).ready(function () {
+            $("#hide").bind("click", hideComment);
+            $("#show").bind("click", showComment);
+
+        });
+   
+            
+    </script>
+    
+</head>
+<body>
+
+<div class="block">
+
+    <div class="button">
+            <a href="#" id="hide"  style="display: none" onclick="return false">Сховати</a>
+            <a href="#" id="show"  onclick="return false">Показати</a>  
+    </div>   
+    <div id="comments" style="display: none;">
+        <p><input type="checkbox" value="Apple" />Apple</p>
+        <p><input type="checkbox" value="Samsung" />Samsung</p>
+        <p><input type="checkbox" value="LG" />LG</p>
+        <p><input type="checkbox" value="HTC" />HTC</p>
+        <p><input type="checkbox" value="Xiaomi" />Xiaomi</p>
+        <p><input type="checkbox" value="Huawei" />Huawei</p>
+
+
+    </div>
+    
+</div>
+
+</body>
+</html>
